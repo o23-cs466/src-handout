@@ -7,7 +7,7 @@
 #   ln -s /home/class_projects/memwatch-2.71/memwatch.c memwatch.c 
 
 CC = gcc
-CFLAGS = $(MW) -O4 -Wall -g
+CFLAGS = $(MW) -Wall -g
 
 
 default: memwatch-play
