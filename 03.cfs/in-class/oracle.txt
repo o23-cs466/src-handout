@@ -1,0 +1,54 @@
+output of `make test`
+
+
+current time is 0
+top of loop
+  P1 arrives at   0,  vruntime   0ms   cpu need  75ms  state running  
+  P2 arrives at   0,  vruntime   0ms   cpu need  75ms  state ready  
+run P1 for 24
+
+current time is 24
+top of loop
+  P1 arrives at   0,  vruntime  24ms   cpu need  51ms  state ready  
+  P2 arrives at   0,  vruntime   0ms   cpu need  75ms  state running  
+run P2 for 24
+
+current time is 48
+top of loop
+  P1 arrives at   0,  vruntime  24ms   cpu need  51ms  state running  
+  P2 arrives at   0,  vruntime  24ms   cpu need  51ms  state ready  
+run P1 for 24
+
+current time is 72
+top of loop
+  P1 arrives at   0,  vruntime  48ms   cpu need  27ms  state ready  
+  P2 arrives at   0,  vruntime  24ms   cpu need  51ms  state running  
+run P2 for 24
+
+current time is 96
+top of loop
+  P1 arrives at   0,  vruntime  48ms   cpu need  27ms  state running  
+  P2 arrives at   0,  vruntime  48ms   cpu need  27ms  state ready  
+run P1 for 24
+
+current time is 120
+top of loop
+  P1 arrives at   0,  vruntime  72ms   cpu need   3ms  state ready  
+  P2 arrives at   0,  vruntime  48ms   cpu need  27ms  state running  
+run P2 for 24
+
+current time is 144
+top of loop
+  P1 arrives at   0,  vruntime  72ms   cpu need   3ms  state running  
+  P2 arrives at   0,  vruntime  72ms   cpu need   3ms  state ready  
+run P1 for 24
+
+current time is 168
+top of loop
+  P1 arrives at   0,  vruntime  96ms   cpu need   0ms  state done  
+  P2 arrives at   0,  vruntime  72ms   cpu need   3ms  state running  
+run P2 for 48
+
+final
+  P1 arrives at   0,  vruntime  96ms   cpu need   0ms  state done  
+  P2 arrives at   0,  vruntime 120ms   cpu need   0ms  state done  
